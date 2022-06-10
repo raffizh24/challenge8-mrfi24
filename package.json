@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node -r dotenv/config bin/www",
-    "build": "yarn db:migrate && yarn test",
+    "build": "yarn db:migrate",
     "test": "jest",
     "eslint": "eslint .",
     "develop": "nodemon -r dotenv/config bin/www",
