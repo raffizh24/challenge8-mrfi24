@@ -15,7 +15,7 @@ describe("POST /v1/auth/login", () => {
                 password,
             })
             .then((res) => {
-                expect(res.statusCode).toBe(202);
+                expect(res.statusCode).toBe(201);
                 expect(res.body).toEqual({
                     accessToken: expect.any(String),
                 });
